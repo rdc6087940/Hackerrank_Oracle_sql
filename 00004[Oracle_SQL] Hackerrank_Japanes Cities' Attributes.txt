@@ -1,0 +1,10 @@
+/*
+Query all attributes of every Japanese city in the CITY table. 
+The COUNTRYCODE for Japan is JPN.
+Link : 
+https://www.hackerrank.com/challenges/japanese-cities-attributes/submissions/code/215290935
+*/
+
+-- ans
+SELECT * FROM CITY
+WHERE COUNTRYCODE = 'JPN';
