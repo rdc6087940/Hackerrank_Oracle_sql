@@ -1,0 +1,9 @@
+/*
+Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
+Link : 
+https://www.hackerrank.com/challenges/weather-observation-station-9/problem
+*/
+
+-- ans
+select distinct city from station
+where city not like 'A%' AND CITY not like 'E%' AND CITY  not like 'I%' AND CITY not like 'O%' AND CITY not like 'U%';
