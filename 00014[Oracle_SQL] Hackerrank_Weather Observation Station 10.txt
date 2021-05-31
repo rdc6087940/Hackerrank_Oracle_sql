@@ -1,0 +1,12 @@
+/*
+Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
+Link : 
+https://www.hackerrank.com/challenges/weather-observation-station-10/problem
+*/
+
+-- ans
+SELECT DISTINCT CITY FROM STATION
+WHERE CITY not LIKE '%a' and CITY not LIKE '%e' and
+CITY not LIKE '%i' and
+CITY  not LIKE '%o' and
+CITY not LIKE '%u';
