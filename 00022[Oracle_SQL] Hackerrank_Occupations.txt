@@ -1,0 +1,19 @@
+/*
+Pivot the Occupation column in OCCUPATIONS so that each Name is sorted alphabetically and displayed underneath its corresponding Occupation. The output column headers should be Doctor, Professor, Singer, and Actor, respectively.
+
+Note: Print NULL when there are no more names corresponding to an occupation.
+
+Input Format
+
+Link : 
+https://www.hackerrank.com/challenges/occupations/problem
+*/
+
+-- ans
+select min(decode(occupation,'Doctor',name)),
+        min(decode(occupation,'Professor',name)),
+       min( decode(occupation,'Singer',name)),
+        min(decode(occupation,'Actor',name))
+        from (select ROW_NUMBER() OVER(partition by occupation order by name) rn,name,occupation from occupations)
+       group by rn
+       order by rn;
