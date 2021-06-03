@@ -1,0 +1,10 @@
+/*
+Query a count of the number of cities in CITY having a Population larger than 100,000.
+
+Link : 
+https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem
+*/
+
+-- ans
+SELECT COUNT(NAME) FROM CITY
+WHERE POPULATION>100000;
