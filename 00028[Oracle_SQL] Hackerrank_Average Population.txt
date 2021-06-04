@@ -1,0 +1,9 @@
+/*
+Query the average population for all cities in CITY, rounded down to the nearest integer.
+
+Link : 
+https://www.hackerrank.com/challenges/average-population/problem
+*/
+
+-- ans
+select floor(avg(population)) from city;
