@@ -1,0 +1,9 @@
+/*
+Query the greatest value of the Northern Latitudes (LAT_N) from STATION that 137.2345 is less than . Truncate your answer 4 to  decimal places.
+Link : 
+https://www.hackerrank.com/challenges/weather-observation-station-14/problem
+*/
+
+-- ans
+select  round(max(LAT_N),4) from station
+where LAT_N<137.2345;
